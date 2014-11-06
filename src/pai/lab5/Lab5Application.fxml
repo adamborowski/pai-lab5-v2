@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="359.0" prefWidth="723.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pai.lab5.Lab5ApplicationController">
+    <children>
+      <ProgressIndicator fx:id="gauge" layoutX="11.0" layoutY="39.0" prefHeight="234.0" prefWidth="334.0" progress="1.0" />
+      <HBox alignment="CENTER" layoutX="14.0" layoutY="319.0" prefHeight="40.0" prefWidth="415.0" spacing="20.0">
+         <children>
+              <Button fx:id="throttleButton" onAction="#handleThrottle" text="Throttle" />
+            <Button fx:id="idleButton" onAction="#handleIdle" text="Idle" />
+            <Button onAction="#handleBrake" text="Brake" />
+         </children>
+      </HBox>
+      <ProgressBar fx:id="progressBar" layoutX="311.0" layoutY="105.0" prefHeight="102.0" prefWidth="203.0" progress="0.0" />
+      <Slider fx:id="slider" layoutX="593.0" layoutY="23.0" orientation="VERTICAL" prefHeight="314.0" prefWidth="86.0" />
+      <Label layoutX="47.0" layoutY="10.0" prefHeight="15.0" prefWidth="646.0" text="Wcisniecie usuwa observable, zwolnienie dodaje observable" />
+    </children>
+</AnchorPane>
